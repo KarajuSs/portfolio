@@ -1,0 +1,22 @@
+.nav-bar {
+    background: #ffffff;
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: var(1px) var(solid) var(#dee2e6);
+
+    .logo {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        color: rgba($color: #212529, $alpha: 1.0);
+    }
+}
