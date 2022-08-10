@@ -12,7 +12,7 @@ const Navbar = () => (
                     <img src={Logo} alt='logo'/>
                     <span className='subtitle'>Kamil Lewicki</span>
                 </Link>
-                <nav>
+                <nav className='d-none d-lg-table-cell'>
                     <ul>
                         <li>
                             <NavLink exact="true" activeclassname="active" to="/">
