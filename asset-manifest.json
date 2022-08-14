@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6258f156.css",
+    "main.js": "/static/js/main.259d952b.js",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/avatar.jpg": "/static/media/avatar.cf670ae754546620c775.jpg",
+    "static/media/logoK.png": "/static/media/logoK.1fbfef3c83d3a42d84bd.png",
+    "index.html": "/index.html",
+    "main.6258f156.css.map": "/static/css/main.6258f156.css.map",
+    "main.259d952b.js.map": "/static/js/main.259d952b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6258f156.css",
+    "static/js/main.259d952b.js"
+  ]
+}
