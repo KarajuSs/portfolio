@@ -24,3 +24,17 @@
 .bottom-tag-html {
     margin-left: -20px;
 }
+
+.container {
+    width: 100%;
+    will-change: contents;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }
