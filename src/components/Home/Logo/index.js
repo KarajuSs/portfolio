@@ -1,6 +1,5 @@
 import gsap from 'gsap-trial'
 import { useEffect, useRef } from 'react'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoK from '../../../assets/images/logoK.png'
 import './index.scss'
 
@@ -10,8 +9,6 @@ const Logo = () => {
     const solidLogoRef = useRef()
 
     useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
-
         gsap
         .timeline()
         .to(bgRef.current, {
