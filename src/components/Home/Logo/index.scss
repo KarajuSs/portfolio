@@ -8,18 +8,7 @@
     bottom: 0;
     left: auto;
     margin: auto;
-    opacity: 0;
-
-    &:hover {
-        animation: rubberBand 1s .5s;
-    }
-
-    svg {
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        transform: rotateZ(20deg) !important;
-    }
+    animation: bouncing 2s .5s infinite;
 
     .solid-logo {
         position: absolute;
@@ -28,14 +17,46 @@
         bottom: auto;
         left: 0;
         margin: auto;
-        width: 100%;
-        opacity: 0;
+        width: 400px;
+        background-size: cover;
         transform: rotateZ(20deg);
         z-index: 1;
+        animation: glitched 3.5s infinite steps(1);
     }
 }
 
-.svg-container {
-    stroke: #ffd700;
-    stroke-width: 10px;
+@keyframes bouncing {
+    50% {
+        top: -40px;
+    }
+}
+@keyframes glitched {
+    0%, 100% {
+        background-image: url('../../../assets/images/logoK.png');
+        background-size: cover;
+    }
+
+    90% {
+        background-image: url('../../../assets/images/glitched/glitch-image-1.png');
+        background-size: cover;
+        opacity: 0;
+    }
+
+    92.5% {
+        background-image: url('../../../assets/images/glitched/glitch-image-2.png');
+        background-size: cover;
+        opacity: 1;
+    }
+
+    95% {
+        background-image: url('../../../assets/images/glitched/glitch-image-3.png');
+        background-size: cover;
+        opacity: 0;
+    }
+
+    97.5% {
+        background-image: url('../../../assets/images/glitched/glitch-image-4.png');
+        background-size: cover;
+        opacity: 1;
+    }
 }

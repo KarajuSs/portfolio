@@ -17,19 +17,19 @@ const Navbar = () => (
                         <li>
                             <NavLink exact="true" activeclassname="active" to="/">
                                 <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
-                                <span className="text">Home</span>
+                                <span className="text">Główna</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
                                 <FontAwesomeIcon icon={faAddressBook} color="#4d4d4e"/>
-                                <span className="text">About</span>
+                                <span className="text">O mnie</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
-                                <FontAwesomeIcon icon={faBook} color="#4d4d4e"/>
-                                <span className="text">Projects</span>
+                                <FontAwesomeIcon icon={faAddressBook} color="#4d4d4e"/>
+                                <span className="text">Projekty</span>
                             </NavLink>
                         </li>
                     </ul>

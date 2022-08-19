@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const helloArray = ['z','e','e','e','ś','ć','!']
+    const imArray = ['J','e','s','t','e','m']
     const nameArray = ['a','m','i','l',' ', 'L','e','w','i','c','k','i']
     const jobArray = ['w','e','b',' ', 'd','e','v','e','l', 'o','p','e','r', '.']
 
@@ -29,19 +31,18 @@ const Home = () => {
                     </Col>
                     <Col>
                         <h1>
-                            <span className={letterClass}>H</span>
-                            <span className={`${letterClass} _12`}>i,</span>
+                            <span className={letterClass}>C</span>
+                            <AnimatedLetters letterClass={letterClass} strArray={helloArray} idx={2}/>
                             <br/>
-                            <span className={`${letterClass} _13`}>I</span>
-                            <span className={`${letterClass} _14`}>'m</span>
+                            <AnimatedLetters letterClass={letterClass} strArray={imArray} idx={9}/>
                             <img src={LogoTitle} alt="developer"/>
                             <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>
                             <br/>
                             <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={27}/>
                         </h1>
                         <h2>Frontend Dev / JavaScript / Java / GFX Designer</h2>
-                        <Link to="/about" className='flat-button'>About me!</Link>
-                        <Link to="/contact" className='flat-button'>Contact me!</Link>
+                        <Link to="/about" className='flat-button'>O mnie!</Link>
+                        <Link to="/contact" className='flat-button'>Kontakt</Link>
                     </Col>
                     <Logo/>
                 </Row>

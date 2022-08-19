@@ -82,6 +82,7 @@
     background-image: linear-gradient(90deg, $hexagon-color-1, $hexagon-color-2);
     border-radius: calc($hexagon-size / 10);
     transition: transform 400ms ease;
+    animation: fadeInDownBig 1.4s .9s;
 
     img {
         position: absolute;
