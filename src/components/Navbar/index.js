@@ -28,7 +28,7 @@ const Navbar = () => (
                         </li>
                         <li>
                             <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
-                                <FontAwesomeIcon icon={faAddressBook} color="#4d4d4e"/>
+                                <FontAwesomeIcon icon={faBook} color="#4d4d4e"/>
                                 <span className="text">Projekty</span>
                             </NavLink>
                         </li>
