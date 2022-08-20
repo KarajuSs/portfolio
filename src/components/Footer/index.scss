@@ -10,6 +10,7 @@ footer {
     justify-content: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    animation: zoomInUp 5s 2s backwards;
 
     .spinner {
         position: absolute;
