@@ -11,7 +11,7 @@ const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const helloArray = ['z','e','e','e','ś','ć','!']
     const imArray = ['J','e','s','t','e','m']
-    const nameArray = ['a','m','i','l',' ', 'L','e','w','i','c','k','i']
+    const nameArray = ['a','m','i','l',',']
     const jobArray = ['w','e','b',' ', 'd','e','v','e','l', 'o','p','e','r', '.']
 
     useEffect(() => {
