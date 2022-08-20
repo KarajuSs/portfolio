@@ -1,6 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react';
+import SkillPercent from '../SkillPercent';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -41,55 +42,13 @@ const About = () => {
             </div>
 
             <div className='skills-cont'>
-                <div className='skill'>
-                    <AnimatedLetters
-                        letterClass={skillLetterClass}
-                        strArray={['H','T','M','L']}
-                        idx={12}/>
-                    <div className='skill-bar' data-percent='100'>
-                        100%
-                    </div>
-                </div>
-
-                <div className='skill'>
-                    <AnimatedLetters
-                        letterClass={skillLetterClass}
-                        strArray={['C','S','S']}
-                        idx={16}/>
-                    <div className='skill-bar' data-percent='100'>
-                        100%
-                    </div>
-                </div>
-
-                <div className='skill'>
-                    <AnimatedLetters
-                        letterClass={skillLetterClass}
-                        strArray={['S','A','S','S']}
-                        idx={19}/>
-                    <div className='skill-bar' data-percent='100'>
-                        100%
-                    </div>
-                </div>
-
-                <div className='skill'>
-                    <AnimatedLetters
-                        letterClass={skillLetterClass}
-                        strArray={['J','S']}
-                        idx={23}/>
-                    <div className='skill-bar' data-percent='60'>
-                        60%
-                    </div>
-                </div>
-
-                <div className='skill'>
-                    <AnimatedLetters
-                        letterClass={skillLetterClass}
-                        strArray={['J','a','v','a']}
-                        idx={25}/>
-                    <div className='skill-bar' data-percent='70'>
-                        70%
-                    </div>
-                </div>
+                <SkillPercent clazz={skillLetterClass} array={['H','T','M','L']} percent={'100'} idx={12}/>
+                <SkillPercent clazz={skillLetterClass} array={['C','S','S']} percent={'100'} idx={16}/>
+                <SkillPercent clazz={skillLetterClass} array={['S','A','S','S']} percent={'100'} idx={19}/>
+                <SkillPercent clazz={skillLetterClass} array={['J','S']} percent={'60'} idx={23}/>
+                <SkillPercent clazz={skillLetterClass} array={['J','a','v','a']} percent={'70'} idx={25}/>
+                <SkillPercent clazz={skillLetterClass} array={['S','Q','L']} percent={'70'} idx={29}/>
+                <SkillPercent clazz={skillLetterClass} array={['P','H','P']} percent={'50'} idx={32}/>
             </div>
         </div>
     )
