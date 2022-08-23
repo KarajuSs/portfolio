@@ -1,5 +1,5 @@
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background: #5cf4ff4d;
     width: 250px;
@@ -21,7 +21,6 @@ footer {
         background: #fff;
         border-radius: 38px 40px 39px 47px;
         z-index: 1001;
-        animation: rotateIt 27s infinite;
     }
 }
 
@@ -32,5 +31,17 @@ footer {
     100% {
         transform: rotate(2880deg);
         left: 230px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .spinner {
+        animation: rotateIt 27s infinite;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .spinner {
+        display: none;
     }
 }

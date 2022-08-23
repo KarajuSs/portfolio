@@ -4,10 +4,7 @@
     position: absolute;
     top: 0;
     z-index: 3;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 40px;
     border-bottom: 1px solid #dee2e6;
 
     .logo {
@@ -36,15 +33,14 @@
     }
 
     nav {
-        width: 280px;
-        height: 70px;
-        display: block;
+        min-width: 280px;
+        height: auto;
         font-size: 2rem;
         position: absolute;
         top: 0;
         right: 0;
         margin-top: 10px;
-        margin-right: 40px;
+        margin-right: 80px;
         text-align: center;
         
         a {
@@ -106,12 +102,7 @@
         }
 
         a.active {
-            border-right: 1px solid #212529;
-            border-left: 1px solid #212529;
-            border-radius: 5px;
             height: 50px;
-            box-shadow: 0 0 0 0 rgba($color: #212529, $alpha: 1.0);
-            animation: borderPulse 2s infinite;
 
             &::after {
                 opacity: 1;
@@ -137,5 +128,90 @@
     100% {
         transform: scale(0.98);
         box-shadow: 0 0 0 0 rgba($color: #212529, $alpha: 0.0);
+    }
+}
+
+.hamburger-icon, .close-icon {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-bar nav a.active {
+        border-right: 1px solid #212529;
+        border-left: 1px solid #212529;
+        border-radius: 5px;
+        box-shadow: 0 0 0 0 rgba($color: #212529, $alpha: 1.0);
+        animation: borderPulse 2s infinite;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+    }
+
+    ul, nav {
+        display: none;
+    }
+
+    nav {
+        min-width: 100%;
+        min-height: 100%;
+        background: #181818;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 2;
+        margin: 0 !important;
+
+        a {
+            font-size: 36px !important;
+            top: 60px;
+            left: 40%;
+            transform: translateX(-60%);
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    
+        a::after {
+            font-size: 16px !important;
+            opacity: 1 !important;
+            position: initial;
+            width: auto;
+            margin-left: 70px;
+        }
+
+        a.active {
+            &::after {
+                color: #00f3f3;
+                transform: translateY(0) !important;
+            }
+
+            svg {
+                color: #00f3f3;
+                transform: translateY(0) !important;
+            }
+        }
+
+        &.mobile-nav {
+            display: block;
+        }
+    }
+
+    .hamburger-icon,
+    .close-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }

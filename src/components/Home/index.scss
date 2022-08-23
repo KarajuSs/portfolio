@@ -122,3 +122,48 @@
       transform: rotate(-60deg);
     }
 }
+
+@media screen and (min-width: 1200px) {
+  .logo-container {
+    animation: bouncing 2s 0.5s infinite;
+  }
+}
+
+@media screen and (max-width: 1200px) { 
+  .home-page {
+    .text-zone {
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+  }
+
+  .flat-button {
+    float: none !important;
+    display: block;
+    margin: 20px auto 0 auto !important;
+  }
+
+  .logo-container {
+    position: relative !important;
+    width: 100px !important;
+    height: auto !important;
+    top: 20px !important;
+    right: 0 !important;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
+
+    img {
+      width: 100px !important;
+    }
+  }
+}

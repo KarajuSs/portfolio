@@ -10,9 +10,14 @@ html {
 
 body {
   color: #444;
-  background: #0E1129;
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
 }
