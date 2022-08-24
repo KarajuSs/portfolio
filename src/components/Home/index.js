@@ -1,7 +1,6 @@
 import LogoTitle from '../../assets/images/logo-K_200x200.png'
 import Avatar from '../../assets/images/avatar.jpg'
 import './index.scss';
-import { Row, Col } from 'react-bootstrap';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
 import { useEffect, useState } from 'react';
