@@ -11,6 +11,12 @@
             "title": "PolanieOnLine JAVA",
             "description": "JAVA, SQL",
             "url": "https://github.com/PolanieOnLine/PolanieOnLine"
+        },
+        {
+            "cover": "/portfolio/projects/2/portfolio.png",
+            "title": "Portfolio",
+            "description": "React, JS",
+            "url": "https://karajuss.github.io/portfolio"
         }
     ]
 }
