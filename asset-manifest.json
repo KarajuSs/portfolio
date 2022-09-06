@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e526e43f.css",
-    "main.js": "/portfolio/static/js/main.29638021.js",
+    "main.css": "/portfolio/static/css/main.5bb473c8.css",
+    "main.js": "/portfolio/static/js/main.9dd1f2a1.js",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
     "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.cf670ae754546620c775.jpg",
@@ -11,11 +11,11 @@
     "static/media/glitch-image-2.png": "/portfolio/static/media/glitch-image-2.19a1b50d48ab7fffff74.png",
     "static/media/glitch-image-4.png": "/portfolio/static/media/glitch-image-4.9e2248ed976e5f28d655.png",
     "index.html": "/portfolio/index.html",
-    "main.e526e43f.css.map": "/portfolio/static/css/main.e526e43f.css.map",
-    "main.29638021.js.map": "/portfolio/static/js/main.29638021.js.map"
+    "main.5bb473c8.css.map": "/portfolio/static/css/main.5bb473c8.css.map",
+    "main.9dd1f2a1.js.map": "/portfolio/static/js/main.9dd1f2a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e526e43f.css",
-    "static/js/main.29638021.js"
+    "static/css/main.5bb473c8.css",
+    "static/js/main.9dd1f2a1.js"
   ]
 }
