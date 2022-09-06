@@ -28,7 +28,7 @@ const About = () => {
                 <h1>
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={['O', ' ', 'm','n','i','e']}
+                        strArray={'O mnie'.split('')}
                         idx={1}/>
                 </h1>
                 <p>
