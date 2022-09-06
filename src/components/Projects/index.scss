@@ -116,3 +116,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .container.projects-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        h1.title {
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        .image-box {
+            height: 200px;
+            max-width: calc(50% - 10px);
+        }
+    }
+}
