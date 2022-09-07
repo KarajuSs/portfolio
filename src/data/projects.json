@@ -3,7 +3,7 @@
         {
             "cover": "/portfolio/projects/1/pol-web.png",
             "title": "PolanieOnLine WEB",
-            "description": "PHP, JS, SQL",
+            "description": "PHP, JS, SQL, CSS",
             "url": "https://polanieonline.eu"
         },
         {
@@ -15,7 +15,7 @@
         {
             "cover": "/portfolio/projects/2/portfolio.png",
             "title": "Portfolio",
-            "description": "React, JS",
+            "description": "React, JS, SASS",
             "url": "https://karajuss.github.io/portfolio"
         }
     ]
