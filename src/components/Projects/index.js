@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
-import projectsData from '../../data/projects.json'
+import { useEffect, useState } from 'react';
+import AnimatedLetters from '../AnimatedLetters';
+import './index.scss';
+import projectsData from '../../data/projects.json';
+import Loader from 'react-loaders';
 
 const Projects = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('text-animate');
     console.log(projectsData);
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            return setLetterClass('text-animate-hover')
+            return setLetterClass('text-animate-hover');
         }, 2000);
 
         return () => {
@@ -39,16 +40,19 @@ const Projects = () => {
     }
 
     return (
-        <div className='container projects-page'>
-            <h1 className='title'>
-                <AnimatedLetters
-                    letterClass={letterClass}
-                    strArray={'Projekty'.split('')}
-                    idx={1}/>
-            </h1>
+        <>
+            <div className='container projects-page'>
+                <h1 className='title'>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={'Projekty'.split('')}
+                        idx={1}/>
+                </h1>
 
-            <div>{renderProjects(projectsData.projects)}</div>
-        </div>
+                <div>{renderProjects(projectsData.projects)}</div>
+            </div>
+            <Loader type="square-spin" />
+        </>
     );
 }
 
