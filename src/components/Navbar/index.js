@@ -4,6 +4,7 @@ import Logo from '../../assets/images/logo-K_32x32.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faBars, faBook, faClose, faHome } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
@@ -23,6 +24,9 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
                     <FontAwesomeIcon icon={faBook} color="#4d4d4e"/>
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
                 </NavLink>
                 <FontAwesomeIcon
                     onClick={() => setShowNav(false)}

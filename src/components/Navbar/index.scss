@@ -101,6 +101,12 @@
             }
         }
 
+        a.contact-link {
+            &::after {
+                content: 'Kontakt';
+            }
+        }
+
         a.active {
             height: 50px;
 
@@ -154,7 +160,7 @@
         margin-left: 0 !important;
     }
 
-    ul, nav {
+    nav {
         display: none;
     }
 
