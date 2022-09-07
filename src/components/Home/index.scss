@@ -63,6 +63,12 @@
     border-bottom-right-radius: 10px;
     transition: .4s;
 
+    &::after {
+        content: '!';
+        letter-spacing: 0;
+        margin-left: -2.5px;
+    }
+
     &:hover {
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
