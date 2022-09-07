@@ -121,6 +121,7 @@
     .container.projects-page {
         width: 100%;
         padding: 20px;
+        margin-top: 130px;
         box-sizing: border-box;
 
         h1.title {
@@ -128,9 +129,16 @@
             margin-top: 25px;
         }
 
+        .images-cont {
+            display: block;
+            gap: 15;
+            flex-wrap: nowrap;
+        }
+
         .image-box {
+            margin-bottom: 10px;
             height: 200px;
-            max-width: calc(50% - 10px);
+            max-width: 100%;
         }
     }
 }
