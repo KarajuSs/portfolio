@@ -1,13 +1,13 @@
-import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import './index.scss';
+import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import SkillPercent from '../SkillPercent';
 import Loader from 'react-loaders';
 
 const About = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const [skillLetterClass, setSkillLetterClass] = useState('text-animate')
-    const skillBars = document.querySelectorAll('.skill-bar')
+    const [letterClass, setLetterClass] = useState('text-animate');
+    const [skillLetterClass, setSkillLetterClass] = useState('text-animate');
+    const skillBars = document.querySelectorAll('.skill-bar');
 
     for (let skillBar of skillBars) {
         skillBar.style.width = skillBar.getAttribute('data-percent') + '%';
@@ -21,7 +21,7 @@ const About = () => {
         setTimeout(() => {
             return setSkillLetterClass('text-animate-hover')
         }, 4700)
-    }, [])
+    }, []);
 
     return (
         <>
@@ -46,7 +46,7 @@ const About = () => {
                 <div className='skills-cont'>
                     <SkillPercent clazz={skillLetterClass} array={['H','T','M','L']} percent={'100'} idx={12}/>
                     <SkillPercent clazz={skillLetterClass} array={['C','S','S']} percent={'100'} idx={16}/>
-                    <SkillPercent clazz={skillLetterClass} array={['S','A','S','S']} percent={'100'} idx={19}/>
+                    <SkillPercent clazz={skillLetterClass} array={['S','A','S','S']} percent={'80'} idx={19}/>
                     <SkillPercent clazz={skillLetterClass} array={['J','S']} percent={'60'} idx={23}/>
                     <SkillPercent clazz={skillLetterClass} array={['J','a','v','a']} percent={'70'} idx={25}/>
                     <SkillPercent clazz={skillLetterClass} array={['S','Q','L']} percent={'70'} idx={29}/>
